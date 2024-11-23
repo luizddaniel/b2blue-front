@@ -1,70 +1,63 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Instruções de Instalação
 
-## Available Scripts
+Siga os passos abaixo para configurar o ambiente e executar o projeto.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Pré-requisitos
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Certifique-se de ter os seguintes requisitos instalados em sua máquina:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Node.js (versão recomendada: v14.21.3 ou superior)
+- NPM (ou Yarn, dependendo da sua preferência)
+- Backend em execução (configurado para responder às rotas definidas)
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Passos para Instalação
 
-### `npm run build`
+1. **Clone este repositório:**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   git clone git@github.com:luizddaniel/b2blue-front.git
+   cd b2blue-front
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Instale as dependências do projeto:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   npm install
+   ```
 
-### `npm run eject`
+3. **Configure o arquivo `.env`:**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   - Crie um arquivo `.env` na raiz do projeto.
+   - Use o arquivo de exemplo `.env.example` como referência:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+     ```bash
+     cp .env.example .env
+     ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   - Configure as variáveis no `.env` conforme necessário. Por exemplo:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+     ```
+     REACT_APP_API_BASE_URL=http://localhost:8000/api
+     ```
 
-## Learn More
+4. **Inicie o servidor de desenvolvimento:**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```bash
+   npm start
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+5. **Acesse a aplicação no navegador:**
 
-### Code Splitting
+   O servidor estará disponível em [http://localhost:3000](http://localhost:3000).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## Notas
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Certifique-se de que o backend esteja em execução e acessível no endereço configurado na variável `REACT_APP_API_BASE_URL` no arquivo `.env`.
+- Para suporte ou dúvidas, entre em contato com o administrador do projeto.
